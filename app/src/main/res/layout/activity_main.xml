@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -118,49 +119,36 @@
         app:layout_constraintTop_toTopOf="@id/Constraint4"
         app:layout_constraintVertical_bias="0.7">
 
-        <CheckBox
-            android:id="@+id/rememberMe"
-            android:text="@string/RememberMe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/Constraint4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
         android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="220dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Constraint2">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8.0dip"
-            android:layout_marginEnd="16dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="16dp"
             android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="8.0dip"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8.0dip"
             android:layout_weight="1.0"
+            android:background="@drawable/btn_login"
             android:text="@string/Login"
             android:theme="@style/ButtonLogin"
-            android:background="@drawable/btn_login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/signUp"
             app:layout_constraintStart_toStartOf="parent"
@@ -170,18 +158,43 @@
             android:id="@+id/signUp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8.0dip"
-            android:layout_marginEnd="8.0dip"
-            android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8.0dip"
+            android:layout_marginEnd="8.0dip"
+            android:layout_marginBottom="8.0dip"
             android:layout_weight="1.0"
+            android:background="@drawable/btn_signup"
             android:text="@string/SignUp"
             android:theme="@style/ButtonSignUp"
-            android:background="@drawable/btn_signup"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/login"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="111dp"
+        android:layout_height="121dp"
+        app:srcCompat="@drawable/logogg"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="573dp" />
+
+    <CheckBox
+        android:id="@+id/rememberMe"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:text="@string/RememberMe"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="101dp"
+        android:layout_height="158dp"
+        app:srcCompat="@drawable/logofb"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="558dp" />
+
 </android.support.constraint.ConstraintLayout>
